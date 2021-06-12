@@ -1,0 +1,1 @@
+<h2>You are in About component</h2>

@@ -6,11 +6,30 @@ import Remaining from './Remaining';
 import AddExpenseForm from './AddExpenseForm';
 import { AppProvider } from './AppContext';
 import UpdateBudgetForm from './UpdateBudgetForm';
-import SearchExpense from './SearchExpense';
+import { Route, Switch } from 'react-router';
+import HomeComponent from './Home';
+import { Link } from 'react-router-dom';
 
+
+function Navbar() {
+  return (
+    <div>
+      <Link to="/home">Home </Link>
+      <Link to="/about">About Us </Link>
+      <Link to="/shop">Shop Now </Link>
+    </div>
+  );
+};
 function App() {
   return (
     <AppProvider>
+      <Switch>
+          asdadad<Route path="/home" component={HomeComponent} exact />
+          
+
+      </Switch>
+
+      <Navbar />
       <div className="App">
       <div className="container">
         <h1 className="mt-3">My Budget Planner</h1>
