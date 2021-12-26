@@ -13,7 +13,7 @@ const initialState = {
 
 export const AppContext = createContext();
 
-export const AppProvider = (props) => {
+export const ContextProvider = (props) => {
     const [state, dispatch] = useReducer(AppReducer, initialState);
 
     return (
